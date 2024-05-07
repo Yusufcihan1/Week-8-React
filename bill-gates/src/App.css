@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(233, 235, 238);
+    display: flex;
+    justify-content: center;
+}
+.card-detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    margin-top: 1rem ;
+}
+.basket{
+    background-color: rgb(245, 243, 243);
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    flex-direction: column;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+    
+}
+.basket-list{
+    font-weight: bold;
+    font-size: 20px;
+    
+    
+}
+.total-price{
+    background-color: antiquewhite;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: blue;
+    font-size: 28px;
+}

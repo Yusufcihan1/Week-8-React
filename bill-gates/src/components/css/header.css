@@ -1,0 +1,23 @@
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 1000px;
+
+}
+
+.image{
+    width: 150px;
+    border-radius: 100px;
+    margin-top: 2rem;
+
+}
+
+.text{
+    margin-top: 1rem;
+    border: 2px solid white;
+    padding: 5px;
+}

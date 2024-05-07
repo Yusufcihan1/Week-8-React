@@ -1,0 +1,42 @@
+
+.card-main{
+    background-color: white;
+    
+
+    
+}
+.card-image{
+    display: block;
+    margin: 15px auto;
+    height: 120px;
+}
+.title{
+    font-size: 24px;
+    text-align: center;
+}
+.price{
+    font-size: 20px;
+    text-align: center;
+    margin-top: -10px;
+
+}
+.entry{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.entry>button{
+    padding: 8px;
+    width: 60px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    background-color: green;
+    
+}
+.entry>button:disabled {
+    background-color: grey;
+}
+

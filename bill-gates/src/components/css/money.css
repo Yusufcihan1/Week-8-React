@@ -1,0 +1,15 @@
+.money {
+    background-color: #00FA9A	;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 1rem;
+    position: sticky;
+    top: 0;
+
+
+}
