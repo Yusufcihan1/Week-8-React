@@ -8,7 +8,23 @@ export default function Cards({ data , budget , setBudget , basket, setBasket , 
 
     const {id, title, price, image} = data; 
     
-  
+    const inputChange = (e) => {
+      const target = e.target.value ;
+      const sameContent = basket.find(item => item.id === id);
+      if(sameContent){
+        sameContent.amount = target;
+        setBasket([...basket.filter(item => item.id !== id), sameContent])
+     }else{
+      //Eğer ürün yoksa basketin içine title,id olarak ekle ve amount değerini 1 den başlat
+      setBasket([...basket , {
+        title : title,
+        id: id,
+        amount : target,
+        price: price 
+      } ])
+     }
+      
+     }
 
     //Değeri input içine yazdırmak için a
     const basketValue = basket.find(item => item.id === id)
@@ -61,7 +77,7 @@ export default function Cards({ data , budget , setBudget , basket, setBasket , 
         <div className='entry'>
           <button disabled={!basketValue} onClick={removeBasket}  >Sell</button>
           
-          <input type="number"  value={basketValue && basketValue.amount || 0  }  />
+          <input type="number" onInput={inputChange} />
           <button disabled={total + price > budget} onClick={addBasket} >Buy</button>
         </div>
     </div>
